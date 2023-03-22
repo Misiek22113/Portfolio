@@ -5,20 +5,39 @@
   grid-template-columns: 2fr 2fr 1fr 1fr;
   grid-template-rows: 1fr;
   border-bottom: 2px solid $border-color;
+  color: #e4ddad;
 
   .name-container {
     .name-text {
-      color: ;
+      padding-left: 2rem;
     }
 
     border-right: 2px solid $border-color;
   }
 
   .options-container {
+    display: flex;
+    justify-content: space-evenly;
+
     border-right: 2px solid $border-color;
   }
 
   .social-media-container {
     border-right: 2px solid $border-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .icon {
+      width: 2rem;
+      height: 2rem;
+      color: #e4ddad;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
