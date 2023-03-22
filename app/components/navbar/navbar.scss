@@ -1,0 +1,24 @@
+@import "../../globals.scss";
+
+.navbar-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 2px solid $border-color;
+
+  .name-container {
+    .name-text {
+      color: ;
+    }
+
+    border-right: 2px solid $border-color;
+  }
+
+  .options-container {
+    border-right: 2px solid $border-color;
+  }
+
+  .social-media-container {
+    border-right: 2px solid $border-color;
+  }
+}
