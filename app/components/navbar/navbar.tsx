@@ -14,21 +14,25 @@ const Navbar = () => {
 
   return (
     <div className="navbar-wrapper">
-      <div className="name-container-mobile">
-        <h1 className="name-text">JAKUB MIŚKO</h1>
+      <div className="mobile-navbar">
+        <div className="name-container-mobile">
+          <h1 className="name-text">JAKUB MIŚKO</h1>
+        </div>
+        <button
+          onClick={handleBurgerClick}
+          className={
+            burgerVisible == true
+              ? "toggle-button-burger"
+              : "toggle-button-close"
+          }
+          id="burger-button"
+        ></button>
       </div>
-      <button
-        onClick={handleBurgerClick}
-        className={
-          burgerVisible == true ? "toggle-button-burger" : "toggle-button-close"
-        }
-        id="burger-button"
-      ></button>
       <div className="navbar-list" data-is-active={`${burgerVisible}`}>
         <div className="name-container">
           <h1 className="name-text">JAKUB MIŚKO</h1>
         </div>
-        <div className="options-container">
+        <div className="work-container">
           <h1 id="work-text">WORK</h1>
         </div>
         <div className="about-container">
