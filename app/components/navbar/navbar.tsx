@@ -3,7 +3,8 @@ import GITHUB from "../../../public/navabr-icons/github.svg";
 import LINKEDIN from "../../../public/navabr-icons/linkedin.svg";
 import Image from "next/image";
 import { useState } from "react";
-// import "./navbar.css";
+import MENU from "../../../public/navabr-icons/burger.svg";
+import CLOSE from "../../../public/navabr-icons/close.svg";
 
 const Navbar = () => {
   const [burgerVisible, setburgerVisible] = useState(true);
@@ -14,23 +15,27 @@ const Navbar = () => {
 
   return (
     <div className="sm:navbar-wrapper bg-background-color">
-      <div className="sm:hidden flex justify-between top-0 left-0 z-50 mobile-border h-12">
-        <div className="sm:hidden block">
+      <div className="sm:hidden bg-background-color flex w-full h-[10%] fixed justify-between top-0 left-0 z-50 mobile-border px-6">
+        <div className="sm:hidden flex justify-center items-center">
           <h1 className="name-text">JAKUB MIŚKO</h1>
         </div>
-        <button
-          onClick={handleBurgerClick}
-          className={
-            burgerVisible == true
-              ? "toggle-button-burger"
-              : "toggle-button-close"
-          }
-          id="burger-button"
-        ></button>
+        <div className="flex justify-center items-center">
+          <Image
+            src={burgerVisible == true ? MENU : CLOSE}
+            alt={"can`t load"}
+            width={2}
+            height={2}
+            className="w-6 h-6 mx-auto block"
+            onClick={handleBurgerClick}
+          ></Image>
+        </div>
       </div>
       <div
-        className="mobile-navabr-list sm:navbar-list"
-        data-is-active={`${burgerVisible}`}
+        className={`mobile-navabr-list duration-700 sm:navbar-list ${
+          burgerVisible == true
+            ? "translate-y-[-100%] sm:translate-y-0"
+            : "translate-y-[0%] sm:translate-y-0"
+        }`}
       >
         <div className="hidden items-center sm:flex sm:desktop-border">
           <h1 className="pl-8">JAKUB MIŚKO</h1>
@@ -57,7 +62,7 @@ const Navbar = () => {
             height={3}
           ></Image>
         </div>
-        <div className="flex justify-evenly items-center">
+        <div className="flex justify-evenly items-center text-center">
           <h1 id="contact-text">CONTACT</h1>
         </div>
       </div>

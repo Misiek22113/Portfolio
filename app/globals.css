@@ -7,11 +7,11 @@
 
 @layer components {
   .navbar-list {
-    @apply grid grid-cols-navbar grid-rows-1 border-b-2 border-solid border-b-border-color h-16;
+    @apply grid grid-cols-navbar top-0 grid-rows-1 border-b-2 border-solid border-b-border-color h-16;
   }
 
   .mobile-navabr-list {
-    @apply grid grid-rows-4 border-b-2 border-solid border-b-border-color h-full fixed w-full bg-background-color;
+    @apply grid grid-rows-4 border-b-2 border-solid border-b-border-color h-[90%] fixed top-[10%] left-0 w-full bg-background-color;
   }
 
   .mobile-border {
