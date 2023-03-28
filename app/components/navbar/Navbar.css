@@ -83,14 +83,6 @@ $tranistion-time: 0.5s;
       background-color: $background-color;
     }
 
-    #burger-button,
-    .name-container-mobile {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
     .name-container-mobile {
       display: flex;
       justify-content: center;
@@ -141,18 +133,26 @@ $tranistion-time: 0.5s;
         grid-area: 5 / 1;
       }
     }
-
-    .navbar-list[data-is-active="false"] {
-      transform: translateY(0%);
-      transition: $tranistion-time;
-    }
-
-    .toggle-button-burger {
-      @include navbar-button-image("../../../public/navabr-icons/burger.svg");
-    }
-
-    .toggle-button-close {
-      @include navbar-button-image("../../../public/navabr-icons/close.svg");
-    }
   }
+}
+
+.toggle-button-burger {
+  @include navbar-button-image("../../../public/navabr-icons/burger.svg");
+}
+
+.toggle-button-close {
+  @include navbar-button-image("../../../public/navabr-icons/close.svg");
+}
+
+.navbar-list[data-is-active="false"] {
+  transform: translateY(0%);
+  transition: $tranistion-time;
+}
+
+#burger-button,
+.name-container-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }

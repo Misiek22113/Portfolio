@@ -5,12 +5,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  background-color: $background-color;
+@layer components {
+  .navbar-list {
+    @apply grid grid-cols-navbar grid-rows-1 border-b-2 border-solid border-b-border-color h-16;
+  }
+
+  .mobile-navabr-list {
+    @apply grid grid-rows-4 border-b-2 border-solid border-b-border-color h-full fixed w-full bg-background-color;
+  }
+
+  .mobile-border {
+    @apply border-b-2 border-solid border-b-border-color border-r-0;
+  }
+
+  .desktop-border {
+    @apply border-r-2 border-solid border-r-border-color border-b-0;
+  }
 }
 
-html,
+/* :root {
+  background-color: $background-color;
+} */
+
+/* html,
 body {
   padding: 0;
   margin: 0;
-}   */
+} */

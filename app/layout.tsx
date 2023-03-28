@@ -1,12 +1,12 @@
 import "./globals.css";
 import { Hanken_Grotesk } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
-// import Navbar from "./components/Navbar/Navbar";
 
 const hanken_grotesk = Hanken_Grotesk({
   subsets: ["latin"],
   style: ["normal", "italic"],
   display: "swap",
+  variable: "--font-hanken-grotesk",
 });
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={hanken_grotesk.className}>
+    <html lang="en" className={hanken_grotesk.variable}>
       <body>
         <Navbar />
         {children}
