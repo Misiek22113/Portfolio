@@ -3,6 +3,7 @@ import GITHUB from "../../../public/navabr-icons/github.svg";
 import LINKEDIN from "../../../public/navabr-icons/linkedin.svg";
 import Image from "next/image";
 import { useState } from "react";
+// import "./navbar.css";
 
 const Navbar = () => {
   const [burgerVisible, setburgerVisible] = useState(true);
@@ -12,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-background-color">
-      <div className="mobile-navbar">
-        <div className="name-container-mobile">
+    <div className="sm:navbar-wrapper bg-background-color">
+      <div className="sm:hidden flex justify-between top-0 left-0 z-50 mobile-border h-12">
+        <div className="sm:hidden block">
           <h1 className="name-text">JAKUB MIŚKO</h1>
         </div>
         <button
@@ -27,33 +28,36 @@ const Navbar = () => {
           id="burger-button"
         ></button>
       </div>
-      <div className="navbar-list" data-is-active={`${burgerVisible}`}>
-        <div className="name-container">
-          <h1 className="name-text">JAKUB MIŚKO</h1>
+      <div
+        className="mobile-navabr-list sm:navbar-list"
+        data-is-active={`${burgerVisible}`}
+      >
+        <div className="hidden items-center sm:flex sm:desktop-border">
+          <h1 className="pl-8">JAKUB MIŚKO</h1>
         </div>
-        <div className="work-container">
+        <div className="flex justify-evenly items-center mobile-border sm:desktop-border sm:border-r-0">
           <h1 id="work-text">WORK</h1>
         </div>
-        <div className="about-container">
+        <div className="flex justify-evenly items-center mobile-border sm:desktop-border">
           <h1 id="about-text">ABOUT</h1>
         </div>
-        <div className="social-media-container">
+        <div className="flex justify-evenly items-center text-center mobile-border sm:desktop-border">
           <Image
             src={GITHUB}
-            className="icon"
+            className="w-8 h-8 items-center"
             alt="nothing"
             width={2}
             height={3}
           ></Image>
           <Image
             src={LINKEDIN}
-            className="icon"
+            className="w-8 h-8 items-center"
             alt="nothing"
             width={3}
             height={3}
           ></Image>
         </div>
-        <div className="contact-container">
+        <div className="flex justify-evenly items-center">
           <h1 id="contact-text">CONTACT</h1>
         </div>
       </div>
