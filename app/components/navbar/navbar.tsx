@@ -14,10 +14,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sm:navbar-wrapper bg-background-color">
-      <div className="sm:hidden bg-background-color flex w-full h-[10%] fixed justify-between top-0 left-0 z-50 mobile-border px-6">
-        <div className="sm:hidden flex justify-center items-center">
-          <h1 className="name-text">JAKUB MIŚKO</h1>
+    <div className="md:navbar-wrapper bg-background-color text-font-color">
+      <div className="md:hidden bg-background-color flex w-full h-[10%] fixed justify-between top-0 left-0 z-50 mobile-border px-6">
+        <div className="md:hidden flex justify-center items-center">
+          <h1 className="text-2xl">JAKUB MIŚKO</h1>
         </div>
         <div className="flex justify-center items-center">
           <Image
@@ -31,22 +31,22 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`mobile-navabr-list duration-700 sm:navbar-list ${
+        className={`mobile-navabr-list duration-700 md:navbar-list md:opacity-100 ${
           burgerVisible == true
-            ? "translate-y-[-100%] sm:translate-y-0"
-            : "translate-y-[0%] sm:translate-y-0"
+            ? "translate-y-[-100%] md:translate-y-0 opacity-20"
+            : "translate-y-[0%] md:translate-y-0 opacity-100"
         }`}
       >
-        <div className="hidden items-center sm:flex sm:desktop-border">
-          <h1 className="pl-8">JAKUB MIŚKO</h1>
+        <div className="hidden items-center md:flex md:desktop-border">
+          <h1 className="pl-8 text-3xl">JAKUB MIŚKO</h1>
         </div>
-        <div className="flex justify-evenly items-center mobile-border sm:desktop-border sm:border-r-0">
-          <h1 id="work-text">WORK</h1>
+        <div className="flex justify-evenly items-center mobile-border md:desktop-border md:border-r-0">
+          <h1 className="text-2xl">WORK</h1>
         </div>
-        <div className="flex justify-evenly items-center mobile-border sm:desktop-border">
-          <h1 id="about-text">ABOUT</h1>
+        <div className="flex justify-evenly items-center mobile-border md:desktop-border">
+          <h1 className="text-2xl">ABOUT</h1>
         </div>
-        <div className="flex justify-evenly items-center text-center mobile-border sm:desktop-border">
+        <div className="flex justify-evenly items-center text-center mobile-border md:desktop-border">
           <Image
             src={GITHUB}
             className="w-8 h-8 items-center"
@@ -63,7 +63,7 @@ const Navbar = () => {
           ></Image>
         </div>
         <div className="flex justify-evenly items-center text-center">
-          <h1 id="contact-text">CONTACT</h1>
+          <h1 className="text-2xl">CONTACT</h1>
         </div>
       </div>
     </div>
