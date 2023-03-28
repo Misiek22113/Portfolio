@@ -1,5 +1,4 @@
 "use client";
-import "./Navbar.scss";
 import GITHUB from "../../../public/navabr-icons/github.svg";
 import LINKEDIN from "../../../public/navabr-icons/linkedin.svg";
 import Image from "next/image";
@@ -13,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar-wrapper">
+    <div className="bg-background-color">
       <div className="mobile-navbar">
         <div className="name-container-mobile">
           <h1 className="name-text">JAKUB MIŚKO</h1>
