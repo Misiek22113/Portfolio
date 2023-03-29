@@ -13,8 +13,9 @@ module.exports = {
       mono: ["ui-monospace", "SFMono-Regular"],
     },
     colors: {
-      "background-color": "#2c2a31",
-      "font-color": "#e4ddad",
+      "background-color": "#191919",
+      "font-color-basic": "#8E8E8E",
+      "font-color-hoover": "#d37a3f",
       "border-color": "#e5a042",
     },
     extend: {
@@ -25,3 +26,13 @@ module.exports = {
   },
   plugins: [],
 };
+
+//#2c2a31
+//#e4ddad
+
+//hover E86A34 EC7D35 E3A857
+
+//229 119 53
+//E3A857
+
+//normal text F2E2C2
