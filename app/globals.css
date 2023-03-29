@@ -7,7 +7,7 @@
 
 @layer components {
   .navbar-list {
-    @apply grid grid-cols-navbar top-0 grid-rows-1 border-b-2 border-solid border-b-border-color h-16;
+    @apply grid grid-cols-navbar top-0 grid-rows-1 border-b-2 border-solid border-b-border-color h-20;
   }
 
   .mobile-navabr-list {

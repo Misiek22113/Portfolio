@@ -14,10 +14,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:navbar-wrapper bg-background-color text-font-color">
+    <div className="md:navbar-wrapper bg-background-color text-font-color-basic">
       <div className="md:hidden bg-background-color flex w-full h-[10%] fixed justify-between top-0 left-0 z-50 mobile-border px-6">
         <div className="md:hidden flex justify-center items-center">
-          <h1 className="text-2xl">JAKUB MIŚKO</h1>
+          <h1 className="text-2xl text-font-color-hoover font-bold">
+            JAKUB MIŚKO
+          </h1>
         </div>
         <div className="flex justify-center items-center">
           <Image
@@ -38,13 +40,19 @@ const Navbar = () => {
         }`}
       >
         <div className="hidden items-center md:flex md:desktop-border">
-          <h1 className="pl-8 text-3xl">JAKUB MIŚKO</h1>
+          <h1 className="pl-8 text-4xl text-font-color-hoover font-bold">
+            JAKUB MIŚKO
+          </h1>
         </div>
         <div className="flex justify-evenly items-center mobile-border md:desktop-border md:border-r-0">
-          <h1 className="text-2xl">WORK</h1>
+          <h1 className="text-3xl hover:text-font-color-hoover duration-300">
+            WORK
+          </h1>
         </div>
         <div className="flex justify-evenly items-center mobile-border md:desktop-border">
-          <h1 className="text-2xl">ABOUT</h1>
+          <h1 className="text-3xl hover:text-font-color-hoover duration-300">
+            ABOUT
+          </h1>
         </div>
         <div className="flex justify-evenly items-center text-center mobile-border md:desktop-border">
           <Image
@@ -63,7 +71,9 @@ const Navbar = () => {
           ></Image>
         </div>
         <div className="flex justify-evenly items-center text-center">
-          <h1 className="text-2xl">CONTACT</h1>
+          <h1 className="text-3xl hover:text-font-color-hoover duration-300">
+            CONTACT
+          </h1>
         </div>
       </div>
     </div>
