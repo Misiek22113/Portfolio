@@ -1,6 +1,6 @@
+import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 import { Hanken_Grotesk } from "next/font/google";
-import Navbar from "./components/Navbar/Navbar";
 
 const hanken_grotesk = Hanken_Grotesk({
   subsets: ["latin"],
