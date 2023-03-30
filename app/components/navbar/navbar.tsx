@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import MENU from "../../../public/navabr-icons/burger.svg";
 import CLOSE from "../../../public/navabr-icons/close.svg";
+import TextAnimation from "../TextAnimation/TextAnimation";
 
 const Navbar = () => {
   const [burgerVisible, setburgerVisible] = useState(true);
@@ -40,9 +41,9 @@ const Navbar = () => {
         }`}
       >
         <div className="hidden items-center md:flex md:desktop-border">
-          <h1 className="pl-8 text-4xl text-font-color-hoover font-bold">
-            JAKUB MIŚKO
-          </h1>
+          <div className="pl-8 text-4xl text-font-color-hoover font-bold">
+            <TextAnimation text="JAKUB MIŚKO" />
+          </div>
         </div>
         <div className="flex justify-evenly items-center mobile-border md:desktop-border md:border-r-0">
           <h1 className="text-3xl hover:text-font-color-hoover duration-300">
