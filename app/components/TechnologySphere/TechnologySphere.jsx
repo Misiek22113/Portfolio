@@ -19,7 +19,7 @@ const TechnologySphere = () => {
       ];
 
       const options = {
-        radius: 300,
+        radius: 400,
         maxSpeed: "normal",
         initSpeed: "slow",
         keep: true,
@@ -30,11 +30,9 @@ const TechnologySphere = () => {
   }, []);
 
   return (
-    <>
-      <div className="text-font-color-hoover">
-        <span className="tagcloud inline-block items-center font-sans font-semibold text-xl"></span>
-      </div>
-    </>
+    <div className="text-font-color-hoover">
+      <span className="tagcloud inline-block items-center font-sans font-semibold text-xl"></span>
+    </div>
   );
 };
 
