@@ -13,10 +13,12 @@ module.exports = {
       mono: ["ui-monospace", "SFMono-Regular"],
     },
     colors: {
+      "text-color": "#F3F3F3",
       "background-color": "#191919",
       "font-color-basic": "#8E8E8E",
       "font-color-hoover": "#d37a3f",
       "border-color": "#e5a042",
+      "icon-color": "#E4DDAD",
     },
     extend: {
       gridTemplateColumns: {
