@@ -6,6 +6,7 @@ import { useState } from "react";
 import MENU from "../../../public/navabr-icons/burger.svg";
 import CLOSE from "../../../public/navabr-icons/close.svg";
 import TextAnimation from "../TextAnimation/TextAnimation";
+import Link from "next/link";
 
 const Navbar = () => {
   const [burgerVisible, setburgerVisible] = useState(true);
@@ -15,12 +16,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:navbar-wrapper bg-background-color text-font-color-basic">
+    <div className="md:navbar-wrapper bg-background-color text-font-color-hoover">
       <div className="md:hidden bg-background-color flex w-full h-[10%] fixed justify-between top-0 left-0 z-50 mobile-border px-6">
         <div className="md:hidden flex justify-center items-center">
-          <h1 className="text-2xl text-font-color-hoover font-bold">
+          <Link href="/" className="text-2xl text-font-color-hoover font-bold">
             JAKUB MIŚKO
-          </h1>
+          </Link>
         </div>
         <div className="flex justify-center items-center">
           <Image
@@ -41,9 +42,12 @@ const Navbar = () => {
         }`}
       >
         <div className="hidden items-center md:flex md:desktop-border">
-          <div className="pl-8 text-4xl text-font-color-hoover font-bold">
+          <Link
+            href="/"
+            className="pl-8 text-4xl text-font-color-hoover font-bold"
+          >
             <TextAnimation text="JAKUB MIŚKO" />
-          </div>
+          </Link>
         </div>
         <div className="flex justify-evenly items-center mobile-border md:desktop-border md:border-r-0">
           <h1 className="text-3xl hover:text-font-color-hoover duration-300">
@@ -51,9 +55,12 @@ const Navbar = () => {
           </h1>
         </div>
         <div className="flex justify-evenly items-center mobile-border md:desktop-border">
-          <h1 className="text-3xl hover:text-font-color-hoover duration-300">
+          <Link
+            href="/about"
+            className="text-3xl hover:text-font-color-hoover duration-300"
+          >
             ABOUT
-          </h1>
+          </Link>
         </div>
         <div className="flex justify-evenly items-center text-center mobile-border md:desktop-border">
           <Image

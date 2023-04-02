@@ -1,3 +1,4 @@
+"use client";
 import { motion, spring, Variants } from "framer-motion";
 
 const TextAnimation = (prop: TextAnimationProp) => {

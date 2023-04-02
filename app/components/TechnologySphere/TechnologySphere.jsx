@@ -31,7 +31,7 @@ const TechnologySphere = () => {
 
   return (
     <div className="text-font-color-hoover">
-      <span className="tagcloud inline-block items-center font-sans font-semibold text-xl"></span>
+      <span className="tagcloud inline-block items-center font-sans font-semibold text-3xl"></span>
     </div>
   );
 };
